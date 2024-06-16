@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados do documento -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para o dispositivo e escala inicial -->
+    <title>Portfólio</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <h1>Meu Portfólio</h1> <!-- Título da barra lateral -->
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <!-- Botões de navegação -->
+                <li><button onclick="showSection('automacao')">Automação Industrial</button></li> <!-- Botão para mostrar a seção de Automação Industrial -->
+                <li><button onclick="showSection('web')">Desenvolvimento Web</button></li> <!-- Botão para mostrar a seção de Desenvolvimento Web -->
+                <li><button onclick="showSection('programacao')">Linguagem de Programação</button></li> <!-- Botão para mostrar a seção de Linguagem de Programação -->
+                <li><button onclick="showSection('banco')">Banco de Dados</button></li> <!-- Botão para mostrar a seção de Banco de Dados -->
+                <li><button onclick="showSection('dados')">Ciência de Dados</button></li> <!-- Botão para mostrar a seção de Ciência de Dados -->
+            </ul>
+        </nav>
+        <!-- Links externos e botão de modo escuro -->
+        <div class="external-links">
+            <!-- Link para o GitHub -->
+            <a href="https://github.com/DarkBytess?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <img class="links" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="github">
+            </a>
+            <!-- Link para o Google Colab -->
+            <a href="https://colab.research.google.com/drive/1FhhzIr-FLqgCFmp3vYwZmU_crR71L3hu" target="_blank" rel="noopener noreferrer">
+                <img class="links" src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252" alt="colab">
+            </a>
+            
+            <!-- Botão de modo escuro -->
+            <div class="toggle-switch">
+                <input class="toggle-input" id="toggle" type="checkbox"> <!-- Input para alternar entre o modo claro e escuro -->
+                <label class="toggle-label" for="toggle"></label> <!-- Rótulo para o input de modo escuro -->
+            </div>
+        </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Seção de Automação Industrial -->
+        <section id="automacao" class="content-section">
+            <h2>Automação Industrial</h2> <!-- Título da seção -->
+            <p>Aprender automação industrial com C++, Arduino e ESP32 foi um processo gradual e enriquecedor. 
+            Começar com fundamentos de programação e avançar para microcontroladores mais poderosos abriu novas 
+            possibilidades para criar sistemas automáticos eficientes e inteligentes. 
+             A prática contínua e a exploração de novos projetos são essenciais 
+             para o desenvolvimento de habilidades em automação industrial..</p>
+            
+             <p>falando um pouco sobre O Arduino é uma plataforma de prototipagem eletrônica de código aberto, 
+                composta por hardware e software fáceis de usar. 
+                Foi criada com o objetivo de tornar a eletrônica mais acessível a todos, desde iniciantes até profissionais. </p>
+
+                <p>falando um pouco sobre O ESP32 é um microcontrolador altamente integrado desenvolvido pela Espressif Systems. 
+                    Ele é amplamente utilizado em projetos de Internet das Coisas (IoT) e automação devido à sua potência, 
+                    conectividade integrada e versatilidade.</p>
+            
+             <h1>projetos</h1>
+             <p>aqui um projeto utilizando o Arduino</p>
+             <img src="arduino1.PNG" alt="">
+              <p>aqui outro projeto com o Arduino</p>
+              <img src="arduino2.PNG" alt="">
+              
+             <p>aqui um projeto utilizando o esp32</p>
+             <img src="esp32.PNG" alt="">            
+        </section>
+
+
+        <!-- Seção de Desenvolvimento Web -->
+        <section id="web" class="content-section">
+            <h2>Desenvolvimento Web</h2> <!-- Título da seção -->
+            <p>em deswinvolvimento web pude aprender html css e javascript vou citar o que pude aprender e mostrar alguns projetos</p>
+               <h1>HTML</h1>
+              <img src="html5.webp" alt="">
+
+               <p>O HTML usa uma estrutura baseada em tags, onde cada tag serve para delimitar diferentes tipos de conteúdo e suas respectivas funções dentro do documento. 
+                Essas tags são elementos que contêm o conteúdo ou os indicam, como cabeçalhos, parágrafos, listas, links, entre outros. 
+                Embora as tags sejam essenciais no HTML, o que realmente define o conteúdo é a disposição do texto entre essas tags.</p>
+
+                <p>Além de estruturar o conteúdo, HTML também suporta a integração com outras tecnologias da web, como CSS (Cascading Style Sheets) para estilização visual e JavaScript para comportamentos interativos e dinâmicos. 
+                    Essa combinação de HTML com CSS e JavaScript é fundamental para a construção de websites modernos, permitindo uma experiência de usuário rica e interativa.</p>
+
+
+                <H1>CSS</H1> 
+                <img src="4272376_e8f2_2.jpg" alt="">
+
+                <p>CSS (Cascading Style Sheets) é uma linguagem usada para definir a apresentação de documentos HTML ou XML. 
+                    Ela permite controlar a aparência de elementos como cores, fontes, espaçamento, layout e responsividade, separando a estrutura do conteúdo da sua aparência visual. 
+                    As regras de estilo são aplicadas a elementos selecionados com base em seletores, que podem ser tags HTML, classes, IDs ou atributos. O CSS funciona de forma cascata, ou seja, 
+                    as regras podem ser sobrepostas ou herdadas de estilos anteriores, 
+                    com uma ordem de precedência bem definida</p>
+
+                    <p>Além disso, permite criar layouts responsivos que se adaptam a diferentes tamanhos de tela e dispositivos. 
+                     A utilização de CSS facilita a manutenção e atualização do design de um site, tornando-o mais consistente e eficiente.</p>
+
+                    <h1>JavaScript</h1> 
+                        <img src="javascript.jpg" alt="">
+
+                      <p>JavaScript é uma linguagem de programação amplamente usada para desenvolvimento web, tanto no lado do cliente quanto no lado do servidor. 
+                        Criada inicialmente para adicionar interatividade a páginas web, ela permite a criação de interfaces dinâmicas e responsivas. No lado do cliente, é executada pelos navegadores, 
+                        possibilitando manipulação do DOM (Document Object Model), 
+                        validação de formulários e comunicação assíncrona com servidores através de AJAX. No lado do servidor, com o Node.js, permite a criação de aplicativos escaláveis e de alto desempenho</p>  
+                    
+                     <p>No lado do servidor, com o Node.js, permite a criação de aplicativos escaláveis e de alto desempenho. JavaScript é conhecida por ser uma linguagem de tipagem dinâmica,
+                         baseada em protótipos e multi-paradigma, suportando programação orientada a objetos, funcional e imperativa. Sua popularidade e vasto ecossistema de bibliotecas e frameworks, como React, Angular e Vue.js,
+                          a tornam essencial no desenvolvimento moderno de aplicações web.</p>
+
+                          <h1>Projetos</h1>
+                     <p>mostrarei alguns projetos feitos em sala de aula</p>
+
+                     <p>calculadora</p>
+                     <img src="calcula2.PNG" alt="">
+
+                     <p>calculadora imc</p>
+                     <img src="imc.PNG" alt="">
+
+                     <p>DOM</p>
+                     <img src="dom.PNG" alt="">
+
+
+
+        </section>
+
+        <!-- Seção de Linguagem de Programação -->
+        <section id="programacao" class="content-section">
+            <h2>Linguagem de Programação</h2> <!-- Título da seção -->
+            <p>Variáveis 
+                Variáveis são contêineres para armazenar dados que podem ser alterados durante a execução do programa. 
+                Elas são declaradas especificando o tipo de dado e o nome, e podem ser inicializadas com um valor. 
+                Existem dois tipos principais de variáveis: primitivas (como int, double, char, boolean) e de referência (como String).
+                As variáveis têm diferentes escopos: variáveis locais (declaradas dentro de métodos), variáveis de instância (declaradas dentro da classe, mas fora de métodos, 
+                e acessíveis por todas as instâncias da classe), 
+                e variáveis de classe ou estáticas (declaradas com static, compartilhadas entre todas as instâncias da classe).
+                <img src="variaveis.png" alt="">
+                </p>
+                <p>Estruturas de decisão 
+                    As estruturas de decisão em Java permitem que um programa execute diferentes blocos de código com base em condições específicas. As principais são</p>
+
+                    <p>1.If: Executa um bloco de código se a condição for verdadeira.</p>
+                    <img src="if.png" alt="">
+
+                    <p>2.If-else: Executa um bloco de código se a condição for verdadeira e outro se for falsa.</p>
+                    <img src="if else.png" alt="">
+                    
+                    <p>3.Switch: Seleciona e executa um bloco de código baseado no valor de uma variável.</p>
+                    <img src="switch.png" alt="">
+
+                    <p>As estruturas de repetição em Java permitem executar um bloco de código várias vezes, com base em uma condição. As principais são</p>
+
+                    <p>1.for: Usa-se quando se sabe o número de iterações.</p>
+                    <img src="for.png" alt="">
+                    
+                    <p>2.while: Executa o bloco de código enquanto a condição é verdadeira.</p>
+                    <img src="while.png" alt="">
+
+                    <p>3.do-while: Executa o bloco pelo menos uma vez antes de verificar a condição.</p>
+                    <img src="do-while.png" alt="">
+
+                    <p>Funções:
+                        Funções são blocos de instruções que são executados somente quando “chamados”. Funções pode ter parâmetros, valores que são passados durante sua chamada. 
+                        Funções também podem ter retorno, um valor que é retornado para o local de chamada da função.</p>
+                        <img src="função.PNG" alt="">
+
+                         <p>Funções Recursivas
+                            São funções que executam a chamada delas mesmas dentro de seu próprio bloco de instruções. Veja o exemplo:</p>
+                            <img src="recursiva.PNG" alt="">
+            </section>
+
+        <!-- Seção de Banco de Dados -->
+        <section id="banco" class="content-section">
+            <h2>Banco de Dados</h2> <!-- Título da seção -->
+           <p>vou falar um pouco sobre os dois principais tipos de banco de Dados</p>     
+          <p>SQL (Relacionais):
+            Os bancos de dados relacionais são mais rígidos em termos de estrutura, pois organizam os dados em tabelas que precisam se relacionar entre si.
+             Eles seguem padrões importantes e uma estrutura predefinida
+            geralmente estabelecida por uma pessoa ou equipe.
+             Exemplos de bancos de dados relacionais incluem MySQL, PostgreSQL e Oracle.</p>  
+            <img src="Qual-SQL-Devo-Aprender-1-1024x540.png" alt="">
+
+            <p>NoSQL (Não Relacionais):
+               Os bancos de dados NoSQL são mais flexíveis em termos de estrutura de dados. 
+               Eles utilizam um formato JSON e adotam diferentes modelos de dados, como documentos, chave-valor, colunas ou grafos.
+               Isso permite maior flexibilidade e escalabilidade.
+               Exemplos de bancos de dados NoSQL incluem MongoDB, Redis, Cassandra e Neo4j.</p>
+
+               <img src="Bancos_NoSQL1.jpg" alt="">
+
+              <h1>vou falar sobre um pouco sobre padrões ddl e dml e para que servem</h1>
+              <p>DDL é utilizado para criar e modificar a estrutura do banco de dados.
+               Ele define como os dados serão armazenados e organizados, garantindo que a estrutura seja adequada às necessidades da aplicação.</p>
+
+               <p>DML significa Linguagem de Manipulação de Dados.
+                É outro subconjunto da SQL utilizado para inserir, atualizar, deletar e recuperar dados armazenados nas tabelas de um banco de dados. 
+                Os comandos DML lidam diretamente com os dados contidos nos objetos definidos pelo DDL.</p>
+
+                <h1>comandos DDL</h1>
+                <p>CREATE: Cria novos objetos no banco de dados, como tabelas, índices, e visões.</p>
+                 <img src="create.PNG" alt="">
+
+                <p>ALTER: Modifica a estrutura de objetos existentes no banco de dados, como adicionar ou remover colunas de uma tabela.</p>
+                <img src="Capturar.PNG" alt="">
+
+                <p>DROP: Remove objetos do banco de dados, como tabelas ou índices</p>
+                <img src="drop.PNG" alt="">
+
+                <h1>comandos DML</h1>
+                <P>SELECT: Recupera dados de uma ou mais tabelas</P>
+                <img src="SELECT.PNG" alt="">
+
+                <p>INSERT: Insere novos registros em uma tabela.</p>
+                <img src="INSERT.PNG" alt="">
+
+                <p>UPDATE: Atualiza dados existentes em uma tabela</p>
+                <img src="UPDate.PNG" alt="">
+
+                <p>DELETE: Remove registros de uma tabela</p>
+                <img src="delate.PNG" alt="">
+
+            </section>
+            <!-- Seção de Ciência de Dados -->
+            <section id="dados" class="content-section">
+             <h2>Ciência de Dados</h2> <!-- Título da seção -->
+             <h1>amostragem</h1>
+             <p>vou falar sobre o que pude entender sobre amostragem</p>
+             <p>A amostragem basicamente consiste em selecionar um número de dados para tirar conclusões ou tomar decisões da forma mais eficiente possível. 
+                É muito importante saber de onde os dados são coletados e como podemos, a partir deles, tirar conclusões adequadas. Por exemplo,
+                 se queremos determinar quantos animais vivem em uma região que inclui tanto áreas terrestres quanto lagos, não podemos registrar apenas os animais terrestres. 
+                Sem considerar a vida aquática, estaríamos perdendo dados importantes e não conseguiríamos chegar a um total preciso.
+                Esse método é essencial para diversas áreas de trabalho. Em grandes empresas, a sensação de que estamos sendo "espionados" pelos nossos aparelhos é comum. 
+                Por exemplo, quando falamos que gostaríamos de um celular novo e, logo depois, começamos a ver anúncios de celulares</p>
+                <img src="amostragem.png" alt="">
+
+                <h1>moda</h1>
+                <p>pude entender sobre moda </p>
+                <p>Moda em um conjunto de dados é o dado com maior frequência absoluta.
+
+                    Um conjunto de dados pode ser:
+                    
+                    - **Modal**: quando um conjunto possui uma única moda.
+                        
+                        N = {35, **37**, 36, 34, 38, 35, **37**, **37**, 33, 36, 38, **37**,35, **37**, 34, 33, **37**, 36, 35, 38, 36, 35, 36, **37**, 38, 39, **37**, **37**, 36, **37**, 33, **37**, 35, **37**, 39}
+                        
+                        Mo = {37}
+                        
+                    - **Bimodal**: quando um conjunto possui duas modas.
+                        
+                        A = {**1**, **0**, 2, 3, **1**, 4, 5, **1**, **0**, 3, **0**, 7, 8, 9, **0**, **1**}
+                        
+                        Mo={0,1}
+                        
+                    - **Polimodal**: quando um conjunto possui três ou mais modas.
+                    - **Amodal**: quando todos os dados possuem a mesma frequência.</p>
+                    <img src="moda.PNG" alt="">
+
+                    <h1>mediana</h1>
+                    <p>Dado um conjunto numérico, conhecemos como **mediana** o valor que ocupa a posição central dos valores quando organizamos esses dados em ordem. Para encontrar a mediana, é possível listar os termos em ordem crescente ou decrescente e encontrar o termo que ocupa a posição central.
+
+                        **Encontrando a mediana de conjunto com número de elementos ímpar:** 
+                        
+                        A = { 1.79 m, 1.72 m, 1.63 m, 1.82 m, 1.65 m, 1.75 m, 1,80 m}
+                        
+                        1. Colocar os valores em ordem
+                            
+                            A = {1.63, 1.65, 1.72, 1.75, 1.79, 1.80, 1.82}
+                            
+                        2. Encontrar o valor central
+                            
+                            A = {1.63, 1.65, 1.72, **1.75**, 1.79, 1.80, 1.82}
+                            
+                            $Me = 1.75$
+                            
+                        
+                        **Encontrando a mediana de conjunto com número de elementos par:** 
+                        
+                        A = { 1.79 m, 1.72 m, 1.63 m, 1.82 m, 1.65 m, 1.75 m}
+                        
+                        1. Colocar os valores em ordem
+                            
+                            A = {1.63, 1.65, 1.72, 1.75, 1.79, 1.82}
+                            
+                        2. Encontrar os dois valores centrais
+                            
+                            A = {1.63, 1.65, **1.72**, **1.75**, 1.79, 1.82}
+                            
+                        3. Calcular a média aritmética entre os dois valores centrais:
+                            
+                            $Me = (1,72 + 1,75)/2$
+                            
+                            $Me = 1,735$</p>
+
+                          <h1>media</h1>  
+                          <p>Entre as medidas centrais, a mais utilizada é a média. Existem vários tipos de média, mas as mais comuns são a média aritmética simples e a média aritmética ponderada.
+
+                            **Média Aritmética**
+                            
+                            A média aritmética é calculada pela soma de todos os elementos do conjunto dividida pela quantidade de elementos do conjunto.
+                            
+                            $$
+                            \bar{x}=\sum_{i=1}^n \frac{x_{i}}{n}
+                            $$
+                            
+                            $$
+                            \bar{x}=\frac{x_{1}+x_{2}+x_{3}...+x_{n}}{n}
+                            $$
+                            
+                            n → quantidade de elementos</p>
+                            <img src="media.PNG" alt="">
+
+
+         </section>
+
+
+
+    </main>
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript externo script.js -->
+</body>
+</html>

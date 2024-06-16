@@ -1,0 +1,255 @@
+/* Estilos gerais */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Define a fonte principal para o corpo do texto */
+    margin: 0; /* Remove todas as margens padrão */
+    padding: 0; /* Remove todos os preenchimentos padrão */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir margens e preenchimentos */
+    background-color: #f0f0f0; /* Define a cor de fundo da página */
+    color: #333333; /* Define a cor do texto */
+    display: flex; /* Usa o flexbox para layout */
+    height: 100vh; /* Define a altura da página para ocupar toda a altura da viewport */
+    overflow: hidden; /* Oculta a barra de rolagem horizontal */
+}
+
+/* Estilos da barra lateral */
+
+.sidebar {
+    width: 250px; /* Define a largura fixa da barra lateral */
+    background-color: #eeeeeee7; /* Define a cor de fundo da barra lateral */
+    color: rgb(8, 7, 7); /* Define a cor do texto da barra lateral */
+    display: flex; /* Usa o flexbox para layout */
+    flex-direction: column; /* Define a direção do flexbox como coluna */
+    padding: 1rem; /* Define o espaçamento interno da barra lateral */
+}
+
+.sidebar h1 {
+    margin: 0; /* Remove todas as margens em torno do título */
+    font-size: 1.5rem; /* Define o tamanho da fonte do título */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 2rem; /* Define o espaçamento inferior */
+}
+
+.sidebar nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove todo o preenchimento */
+}
+
+.sidebar nav li {
+    margin-bottom: 1rem; /* Define o espaçamento inferior para os itens da lista */
+}
+
+.sidebar nav button {
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda do botão */
+    color: rgb(9, 205, 68); /* Define a cor do texto do botão */
+    width: 100%; /* Define a largura total do botão */
+    padding: 0.75rem; /* Define o espaçamento interno do botão */
+    text-align: left; /* Alinha o texto do botão à esquerda */
+    cursor: pointer; /* Define o cursor como ponteiro */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    transition: background-color 0.3s ease; /* Define uma transição suave para a cor de fundo do botão */
+}
+
+.sidebar nav button:hover {
+    background-color: #0a0a0a; /* Define a cor de fundo ao passar o mouse sobre o botão */
+}
+
+/* Estilos dos links externos */
+
+.external-links {
+    margin-top: auto; /* Define o espaçamento superior automático para empurrar para o final da barra lateral */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.external-links a {
+    color: rgb(218, 204, 204); /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Define uma transição suave para a cor dos links */
+    border-radius: 4px; /* Define bordas arredondadas */
+    font-size: 1rem; /* Define o tamanho da fonte */
+}
+
+
+/* Estilos do conteúdo principal */
+
+main {
+    flex: 1; /* Faz o conteúdo principal crescer para preencher o espaço disponível */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical caso o conteúdo seja maior que a altura */
+    padding: 2rem; /* Define o espaçamento interno */
+}
+
+.content-section {
+    display: none; /* Oculta todas as seções de conteúdo por padrão */
+    background-color: white; /* Define a cor de fundo das seções de conteúdo */
+    padding: 2rem; /* Define o espaçamento interno das seções de conteúdo */
+    margin-bottom: 2rem; /* Define o espaçamento inferior */
+    border-radius: 8px; /* Define bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra às seções de conteúdo */
+}
+
+.content-section h2 {
+    margin-top: 0; /* Remove a margem superior do título da seção de conteúdo */
+}
+
+.content-section p {
+    line-height: 1.6; /* Define o espaçamento entre linhas dos parágrafos */
+}
+
+.content-section img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Define a altura automática para manter a proporção da imagem */
+    margin-top: 1rem; /* Define o espaçamento superior */
+    border-radius: 8px; /* Define bordas arredondadas */
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Altera a direção do flexbox para coluna em telas menores */
+    }
+
+    .sidebar {
+        width: 100%; /* Define a largura total para a barra lateral em telas menores */
+        height: auto; /* Define a altura automática */
+        padding-bottom: 0; /* Remove o espaçamento inferior */
+    }
+
+    .sidebar nav ul {
+        display: flex; /* Exibe os itens do menu como flexível */
+        flex-wrap: wrap; /* Quebra de linha para itens do menu */
+        justify-content: center; /* Centraliza os itens do menu */
+    }
+
+    .sidebar nav li {
+        margin: 0.5rem; /* Define um espaçamento menor para os itens do menu */
+    }
+
+    .sidebar nav button {
+        width: auto; /* Define a largura automática para os botões do menu */
+    }
+
+    main {
+        padding: 1rem; /* Define o espaçamento interno reduzido */
+    }
+
+    .content-section {
+        padding: 1rem; /* Define o espaçamento interno reduzido para as seções de conteúdo */
+    }
+}
+
+/* Estilos para o modo escuro */
+
+body.dark-mode {
+    background-color: #121212; /* Define a cor de fundo da página no modo escuro */
+    color: #ffffff; /* Define a cor do texto no modo escuro */
+}
+
+body.dark-mode .sidebar {
+    background-color: #151414; /* Define a cor de fundo da barra lateral no modo escuro */
+    color: #ffffff; /* Define a cor do texto da barra lateral no modo escuro */
+}
+
+body.dark-mode .sidebar nav button {
+    color: #00ff00; /* Define a cor do texto dos botões de navegação no modo escuro */
+}
+
+body.dark-mode .sidebar nav button:hover {
+    background-color: #fdf8f8; /* Define a cor de fundo ao passar o mouse sobre os botões de navegação no modo escuro */
+}
+
+
+body.dark-mode .content-section {
+    background-color: #1e1e1e; /* Define a cor de fundo das seções de conteúdo no modo escuro */
+    color: #ffffff; /* Define a cor do texto das seções de conteúdo no modo escuro */
+}
+/* Estilos do botão de alternância de tema */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* Estilos da entrada de alternância */
+
+.toggle-switch .toggle-input {
+    display: none;
+}
+
+/* Estilos do rótulo em torno da chave */
+
+.toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #2196F3;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos da parte redonda da chave */
+
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Estilos quando a alternância está ativada */
+
+.toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #4CAF50;
+}
+
+.toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+}
+
+/* Tema claro */
+
+.toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label {
+    background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label::before {
+    transform: translateX(6px);
+}
+
+/* Tema escuro */
+
+.toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label {
+    background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+}
+
+/* Estilos gerais dos links */
+
+.links {
+    width: 120px; /* Define a largura dos links */
+    height: 40px; /* Define a altura dos links */
+}
